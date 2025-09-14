@@ -1,0 +1,272 @@
+# ===========================
+# FACE AUTHENTICATION PROJECT
+# ===========================
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===========================
+# PYTHON / BACKEND
+# ===========================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Flask instance folder
+instance/
+!instance/.gitkeep
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+face_auth.db
+
+# Uploads and user data
+uploads/
+!uploads/.gitkeep
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===========================
+# NODE.JS / FRONTEND
+# ===========================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production build
+build/
+dist/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# next.js build output
+.next
+
+# nuxt.js build output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# ===========================
+# MACHINE LEARNING / AI
+# ===========================
+
+# Model files and weights
+*.pth
+*.pt
+*.h5
+*.pkl
+*.pickle
+*.onnx
+models/
+checkpoints/
+weights/
+
+# Data files
+data/
+datasets/
+*.csv
+*.json
+*.xml
+!package.json
+!package-lock.json
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# ===========================
+# DOCKER
+# ===========================
+
+# Docker
+.dockerignore
+
+# ===========================
+# LOGS
+# ===========================
+
+# Log files
+*.log
+logs/
+log/
+
+# ===========================
+# TEMPORARY FILES
+# ===========================
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# ===========================
+# SECURITY SENSITIVE
+# ===========================
+
+# API keys and secrets
+secrets/
+.secrets
+config/secrets.py
+config/local.py
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.cert
+
+# ===========================
+# DEVELOPMENT TOOLS
+# ===========================
+
+# MyPy cache
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pylint
+pylint-report.txt
+
+# Editor backup files
+*.bak
+*.backup
+
+# ===========================
+# PROJECT SPECIFIC
+# ===========================
+
+# Face recognition test images
+test_images/
+sample_faces/
+
+# Backup database files
+*.db.backup
+*.sqlite.backup
+
+# Development scripts
+dev_scripts/
+debug/

@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - SECRET_KEY=your-secret-key-here
+      - DATABASE_URL=sqlite:///face_auth.db
+      - SMTP_USERNAME=baveshchowdary1@gmail.com
+      - SMTP_PASSWORD=rrfc ylja oyyc ewrq
+      - CORS_ORIGINS=http://localhost
+    volumes:
+      - backend_uploads:/app/uploads
+      - backend_db:/app
+    networks:
+      - face-auth-network
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - face-auth-network
+    restart: unless-stopped
+
+volumes:
+  backend_uploads:
+  backend_db:
+
+networks:
+  face-auth-network:
+    driver: bridge
