@@ -18,7 +18,7 @@ def test_face_validation():
     try:
         # Test the validate-face endpoint
         response = requests.post(
-            'http://localhost:5000/auth/validate-face',
+            'http://localhost:5000/api/auth/validate-face',
             json={'face_image': test_image_b64},
             headers={'Content-Type': 'application/json'}
         )
